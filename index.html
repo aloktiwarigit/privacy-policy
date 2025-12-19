@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Writ</title>
+    <title>Privacy Policy - LegalAdvocate Pro</title>
     <style>
         * {
             margin: 0;
@@ -18,7 +18,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: #fff;
             padding: 40px;
@@ -46,10 +46,22 @@
             margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.3rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
         p {
             margin-bottom: 15px;
             text-align: justify;
+        }
+        .hindi {
+            color: #555;
+            font-style: italic;
         }
         ul {
             margin: 15px 0 15px 25px;
@@ -57,12 +69,45 @@
         li {
             margin-bottom: 8px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #f3f4f6;
+            color: #1e40af;
+        }
         .highlight {
             background: #eff6ff;
             padding: 15px 20px;
             border-left: 4px solid #2563eb;
             border-radius: 4px;
             margin: 20px 0;
+        }
+        .warning {
+            background: #fef3c7;
+            padding: 15px 20px;
+            border-left: 4px solid #f59e0b;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .do-not {
+            background: #fee2e2;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .do-may {
+            background: #f0fdf4;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
         }
         .contact-box {
             background: #f0fdf4;
@@ -92,128 +137,227 @@
             h1 {
                 font-size: 1.5rem;
             }
+            table {
+                font-size: 0.9rem;
+            }
+            th, td {
+                padding: 8px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p style="font-size: 1.1rem; margin-bottom: 5px;"><span class="app-name">Writ</span> - Voice-Powered Legal Drafting for Advocates</p>
-        <p class="last-updated">Last Updated: December 18, 2024</p>
+        <h1>Privacy Policy / गोपनीयता नीति</h1>
+        <p style="font-size: 1.1rem; margin-bottom: 5px;"><span class="app-name">LegalAdvocate Pro</span></p>
+        <p class="last-updated">Last Updated: December 2024</p>
 
+        <h2>1. Introduction / परिचय</h2>
+        <p>LegalAdvocate Pro ("App", "we", "us") is a legal practice management application designed for legal professionals in India. This Privacy Policy explains how we collect, use, store, and protect your information.</p>
+        <p class="hindi">LegalAdvocate Pro ("ऐप", "हम") भारत में कानूनी पेशेवरों के लिए डिज़ाइन किया गया एक कानूनी अभ्यास प्रबंधन एप्लिकेशन है। यह गोपनीयता नीति बताती है कि हम आपकी जानकारी कैसे एकत्र, उपयोग, संग्रहीत और सुरक्षित करते हैं।</p>
+
+        <h2>2. Information We Collect / हम कौन सी जानकारी एकत्र करते हैं</h2>
+
+        <h3>2.1 Information You Provide / आपके द्वारा प्रदान की गई जानकारी</h3>
+        <ul>
+            <li><strong>Case Information:</strong> Case numbers, party names, FIR details, court names, hearing dates</li>
+            <li><strong>Legal Documents:</strong> Draft applications, petitions, and legal documents you create</li>
+            <li><strong>Voice Recordings:</strong> Audio recordings when using speech-to-text features</li>
+            <li><strong>Private Notes:</strong> Court practice notes and hearing preparation notes</li>
+            <li><strong>Settings:</strong> App preferences, language settings, PIN for private notes</li>
+        </ul>
+
+        <h3>2.2 Automatically Collected Information / स्वचालित रूप से एकत्रित जानकारी</h3>
+        <ul>
+            <li><strong>Usage Data:</strong> Features used, documents created (anonymized counts only)</li>
+            <li><strong>Device Information:</strong> Device type, operating system version (for compatibility)</li>
+        </ul>
+
+        <h2>3. How We Use Your Information / हम आपकी जानकारी का उपयोग कैसे करते हैं</h2>
+        <table>
+            <tr>
+                <th>Purpose / उद्देश्य</th>
+                <th>Data Used / उपयोग किया गया डेटा</th>
+            </tr>
+            <tr>
+                <td>Generate legal documents</td>
+                <td>Case details, voice input</td>
+            </tr>
+            <tr>
+                <td>Speech-to-text transcription</td>
+                <td>Voice recordings (sent to OpenAI Whisper API)</td>
+            </tr>
+            <tr>
+                <td>AI-assisted formatting</td>
+                <td>Legal text (sent to Anthropic Claude API)</td>
+            </tr>
+            <tr>
+                <td>Store your cases locally</td>
+                <td>All case information</td>
+            </tr>
+            <tr>
+                <td>Protect private notes</td>
+                <td>PIN, encrypted notes</td>
+            </tr>
+        </table>
+
+        <h2>4. Data Storage & Security / डेटा संग्रहण और सुरक्षा</h2>
+
+        <h3>4.1 Local Storage / स्थानीय संग्रहण</h3>
         <div class="highlight">
-            <strong>Our Commitment:</strong> Writ is designed with privacy-first principles. Your legal documents and voice recordings are processed locally on your device whenever possible, and we do not sell or share your personal data with third parties.
+            <strong>All your data is stored locally on your device.</strong> We do not have servers that store your case information.<br><br>
+            <span class="hindi"><strong>आपका सभी डेटा आपके डिवाइस पर स्थानीय रूप से संग्रहीत है।</strong> हमारे पास ऐसे सर्वर नहीं हैं जो आपकी केस जानकारी संग्रहीत करें।</span>
         </div>
 
-        <h2>1. Introduction</h2>
-        <p>This Privacy Policy explains how Writ ("we," "our," or "the App") collects, uses, and protects your information. Writ is a legal document drafting application designed for legal professionals in India. By using Writ, you agree to the practices described in this policy.</p>
-
-        <h2>2. Information We Collect</h2>
-
-        <h3 style="margin-top: 15px; margin-bottom: 10px; font-size: 1.1rem;">2.1 Voice and Audio Data</h3>
+        <h3>4.2 Encryption / एन्क्रिप्शन</h3>
         <ul>
-            <li><strong>Voice Recordings:</strong> When you use voice-to-text features, audio is captured temporarily to convert speech to text.</li>
-            <li><strong>Processing:</strong> Voice data may be processed using on-device speech recognition (Google Speech Services) or sent to secure third-party transcription services (OpenAI Whisper API) for accurate Hindi/English transcription.</li>
-            <li><strong>Retention:</strong> Audio recordings are not stored permanently. They are deleted immediately after transcription is complete.</li>
+            <li>All local data is encrypted using <strong>AES-256 encryption</strong></li>
+            <li>Encryption keys are stored in Android Keystore / iOS Keychain</li>
+            <li>Private notes are additionally protected by PIN with <strong>PBKDF2 hashing</strong></li>
         </ul>
 
-        <h3 style="margin-top: 15px; margin-bottom: 10px; font-size: 1.1rem;">2.2 Document Data</h3>
+        <h3>4.3 Security Measures / सुरक्षा उपाय</h3>
         <ul>
-            <li><strong>Draft Documents:</strong> Legal drafts, templates, and documents you create are stored locally on your device.</li>
-            <li><strong>No Cloud Storage:</strong> We do not upload your documents to external servers unless you explicitly choose to share them.</li>
+            <li>Data encrypted at rest</li>
+            <li>PIN protection for sensitive notes</li>
+            <li>No cloud backup of case data</li>
+            <li>Secure API communication (HTTPS)</li>
         </ul>
 
-        <h3 style="margin-top: 15px; margin-bottom: 10px; font-size: 1.1rem;">2.3 Biometric Data</h3>
+        <h2>5. Third-Party Services / तृतीय-पक्ष सेवाएं</h2>
+        <p>We use the following third-party services for AI features:</p>
+
+        <h3>5.1 OpenAI Whisper API (Speech-to-Text)</h3>
         <ul>
-            <li><strong>Authentication Only:</strong> If you enable biometric lock (fingerprint/face), biometric data is processed entirely by your device's secure hardware (Android Keystore).</li>
-            <li><strong>No Collection:</strong> We never access, store, or transmit your biometric data.</li>
+            <li><strong>Data Sent:</strong> Voice recordings for transcription</li>
+            <li><strong>Purpose:</strong> Convert Hindi/English speech to text</li>
+            <li><strong>Retention:</strong> OpenAI may retain data for 30 days for abuse monitoring</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a></li>
         </ul>
 
-        <h3 style="margin-top: 15px; margin-bottom: 10px; font-size: 1.1rem;">2.4 Technical Data</h3>
+        <h3>5.2 Anthropic Claude API (Text Formatting)</h3>
         <ul>
-            <li>Device type and operating system version (for compatibility)</li>
-            <li>App crash reports (if enabled by your device settings)</li>
-            <li>General usage analytics (non-personally identifiable)</li>
+            <li><strong>Data Sent:</strong> Legal text for formatting and review</li>
+            <li><strong>Purpose:</strong> Format Hindi legal documents, grammar correction</li>
+            <li><strong>Retention:</strong> Anthropic does not train on API data</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://www.anthropic.com/privacy" target="_blank">https://www.anthropic.com/privacy</a></li>
         </ul>
 
-        <h2>3. How We Use Your Information</h2>
+        <div class="warning">
+            <strong>Important:</strong> When using AI features, portions of your legal text are transmitted to these services. Do not include highly sensitive information in AI-processed sections.
+        </div>
+
+        <h2>6. Data Sharing / डेटा साझाकरण</h2>
+
+        <div class="do-not">
+            <strong>We DO NOT:</strong>
+            <ul style="margin-top: 10px;">
+                <li>Sell your personal data</li>
+                <li>Share your data with advertisers</li>
+                <li>Create user profiles for marketing</li>
+                <li>Store your data on our servers</li>
+            </ul>
+        </div>
+
+        <div class="do-may">
+            <strong>We MAY share data:</strong>
+            <ul style="margin-top: 10px;">
+                <li>With AI service providers (as described above) only when you use AI features</li>
+                <li>If required by law or court order</li>
+            </ul>
+        </div>
+
+        <h2>7. Your Rights (DPDP Act 2023) / आपके अधिकार</h2>
+        <p>Under India's Digital Personal Data Protection Act, 2023, you have the right to:</p>
+
+        <table>
+            <tr>
+                <th>Right / अधिकार</th>
+                <th>Description / विवरण</th>
+            </tr>
+            <tr>
+                <td><strong>Access</strong></td>
+                <td>View all data stored in the app</td>
+            </tr>
+            <tr>
+                <td><strong>Correction</strong></td>
+                <td>Edit or update your information</td>
+            </tr>
+            <tr>
+                <td><strong>Erasure</strong></td>
+                <td>Delete all your data from the app</td>
+            </tr>
+            <tr>
+                <td><strong>Portability</strong></td>
+                <td>Export your data</td>
+            </tr>
+            <tr>
+                <td><strong>Withdraw Consent</strong></td>
+                <td>Stop using AI features anytime</td>
+            </tr>
+        </table>
+
+        <h3>How to Exercise Your Rights / अपने अधिकारों का उपयोग कैसे करें</h3>
         <ul>
-            <li><strong>Core Functionality:</strong> To provide voice-to-text transcription and legal document drafting features</li>
-            <li><strong>Security:</strong> To authenticate users via biometric or PIN protection</li>
-            <li><strong>Improvement:</strong> To fix bugs and improve app performance</li>
-            <li><strong>Legal Compliance:</strong> To comply with applicable Indian laws and regulations</li>
+            <li><strong>View Data:</strong> Settings → Data Management → View Data</li>
+            <li><strong>Export Data:</strong> Settings → Data Management → Export All Data</li>
+            <li><strong>Delete Data:</strong> Settings → Data Management → Delete All Data</li>
+            <li><strong>Withdraw AI Consent:</strong> Settings → Privacy → Disable AI Features</li>
         </ul>
 
-        <h2>4. Data Sharing and Third Parties</h2>
-        <p>We may share limited data with the following service providers:</p>
-        <ul>
-            <li><strong>OpenAI (Whisper API):</strong> For enhanced speech-to-text transcription. Only audio segments are transmitted; no personal identifiers are included. OpenAI's data use policies apply.</li>
-            <li><strong>Google Speech Services:</strong> For on-device speech recognition when available.</li>
-        </ul>
-        <p><strong>We do NOT:</strong></p>
-        <ul>
-            <li>Sell your personal data to third parties</li>
-            <li>Share your documents or legal content with anyone</li>
-            <li>Use your data for advertising purposes</li>
-        </ul>
+        <h2>8. Data Retention / डेटा प्रतिधारण</h2>
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Retention Period</th>
+            </tr>
+            <tr>
+                <td>Case Information</td>
+                <td>Until you delete it</td>
+            </tr>
+            <tr>
+                <td>Private Notes</td>
+                <td>Auto-deleted after 3 years if not verified</td>
+            </tr>
+            <tr>
+                <td>Voice Recordings</td>
+                <td>Deleted immediately after transcription</td>
+            </tr>
+            <tr>
+                <td>Usage Statistics</td>
+                <td>30 days (local only)</td>
+            </tr>
+        </table>
 
-        <h2>5. Data Storage and Security</h2>
+        <h2>9. Children's Privacy / बच्चों की गोपनीयता</h2>
+        <p>This app is designed for legal professionals and is not intended for use by children under 18 years of age. We do not knowingly collect data from children.</p>
+
+        <h2>10. Changes to This Policy / इस नीति में परिवर्तन</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
         <ul>
-            <li><strong>Local Storage:</strong> All documents and drafts are stored locally on your device using encrypted storage.</li>
-            <li><strong>Encryption:</strong> Sensitive data is protected using AES-256 encryption with keys stored in Android Keystore.</li>
-            <li><strong>No Backups:</strong> App data is excluded from cloud backups to protect confidentiality.</li>
-            <li><strong>Secure Transmission:</strong> All network communications use HTTPS/TLS encryption.</li>
-        </ul>
-
-        <h2>6. Your Rights and Choices</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li><strong>Access:</strong> View all data stored within the app</li>
-            <li><strong>Delete:</strong> Delete your documents, drafts, and recordings at any time</li>
-            <li><strong>Withdraw Consent:</strong> Disable microphone access through device settings</li>
-            <li><strong>Data Portability:</strong> Export your documents as PDF files</li>
-            <li><strong>Opt-out:</strong> Use on-device speech recognition only (may affect accuracy for Hindi)</li>
-        </ul>
-
-        <h2>7. Data Retention</h2>
-        <ul>
-            <li><strong>Voice Recordings:</strong> Deleted immediately after transcription</li>
-            <li><strong>Documents:</strong> Retained until you delete them or uninstall the app</li>
-            <li><strong>Analytics:</strong> Aggregated, anonymized data may be retained for up to 12 months</li>
-        </ul>
-
-        <h2>8. Children's Privacy</h2>
-        <p>Writ is designed for legal professionals and is not intended for use by individuals under 18 years of age. We do not knowingly collect information from children.</p>
-
-        <h2>9. Permissions Explained</h2>
-        <ul>
-            <li><strong>Microphone (RECORD_AUDIO):</strong> Required for voice-to-text dictation features</li>
-            <li><strong>Internet (INTERNET):</strong> Required for enhanced speech transcription and fetching court cause lists</li>
-            <li><strong>Biometric (USE_BIOMETRIC):</strong> Optional, for app lock feature</li>
-            <li><strong>Storage:</strong> To save and export PDF documents (uses scoped storage on Android 10+)</li>
-        </ul>
-
-        <h2>10. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy periodically. We will notify you of significant changes through the app or by updating the "Last Updated" date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-        <h2>11. Compliance</h2>
-        <p>This app complies with:</p>
-        <ul>
-            <li>Information Technology Act, 2000 (India)</li>
-            <li>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</li>
-            <li>Google Play Developer Program Policies</li>
+            <li>Updating the "Last Updated" date</li>
+            <li>Showing a notification in the app</li>
         </ul>
 
         <div class="contact-box">
-            <h3>12. Contact Us</h3>
-            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:aloktiwari1206@gmail.com">aloktiwari1206@gmail.com</a></p>
-            <p><strong>Developer:</strong> Alok Tiwari</p>
-            <p><strong>Location:</strong> India</p>
+            <h3>11. Contact Us / हमसे संपर्क करें</h3>
+            <p>For privacy-related questions or to exercise your rights:</p>
+            <p><strong>Email:</strong> <a href="mailto:aloktiwari49@gmail.com">aloktiwari49@gmail.com</a></p>
+            <p><strong>Address:</strong> Swastik Nagar, Harringtongunj, Ayodhya, UP, India, 224208</p>
         </div>
 
+        <h2>12. Consent / सहमति</h2>
+        <p>By using LegalAdvocate Pro, you consent to:</p>
+        <ul>
+            <li>Local storage of your case data (encrypted)</li>
+            <li>Transmission of data to AI services when using AI features</li>
+            <li>This Privacy Policy</li>
+        </ul>
+        <p>You can withdraw consent for AI features at any time in Settings.</p>
+
         <footer>
-            <p>&copy; 2024 Writ. All rights reserved.</p>
+            <p><em>This Privacy Policy is available in both English and Hindi within the app.</em></p>
+            <p>&copy; 2024 LegalAdvocate Pro. All rights reserved.</p>
             <p>Designed for Indian Legal Professionals</p>
         </footer>
     </div>
